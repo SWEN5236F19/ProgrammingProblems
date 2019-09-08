@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.489
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgrammingExercises", "ProgrammingExercises\ProgrammingExercises.csproj", "{75F26A41-35E8-4EB2-9A2F-01AD8E5B2FF8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgrammingExercises_wk2", "ProgrammingExercises\ProgrammingExercises_wk2.csproj", "{75F26A41-35E8-4EB2-9A2F-01AD8E5B2FF8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9533F05A-7C7F-4AF4-84A0-0FE2ED1B01D2}"
 	ProjectSection(SolutionItems) = preProject

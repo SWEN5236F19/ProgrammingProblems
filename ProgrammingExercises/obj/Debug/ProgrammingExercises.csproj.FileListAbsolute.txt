@@ -1,7 +1,0 @@
-C:\Users\Adriana\Source\Repos\ProgrammingExercises\ProgrammingExercises\obj\Debug\ProgrammingExercises.csprojAssemblyReference.cache
-C:\Users\Adriana\Source\Repos\ProgrammingExercises\ProgrammingExercises\obj\Debug\ProgrammingExercises.csproj.CoreCompileInputs.cache
-C:\Users\Adriana\Source\Repos\ProgrammingExercises\ProgrammingExercises\bin\Debug\ProgrammingExercises.exe.config
-C:\Users\Adriana\Source\Repos\ProgrammingExercises\ProgrammingExercises\bin\Debug\ProgrammingExercises.exe
-C:\Users\Adriana\Source\Repos\ProgrammingExercises\ProgrammingExercises\bin\Debug\ProgrammingExercises.pdb
-C:\Users\Adriana\Source\Repos\ProgrammingExercises\ProgrammingExercises\obj\Debug\ProgrammingExercises.exe
-C:\Users\Adriana\Source\Repos\ProgrammingExercises\ProgrammingExercises\obj\Debug\ProgrammingExercises.pdb

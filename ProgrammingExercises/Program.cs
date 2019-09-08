@@ -25,10 +25,13 @@ namespace ProgrammingExercises
                         ProgrammingProblem2();
                         break;
                     case "3":
+                        ProgrammingProblem3();
                         break;
                     case "4":
+                        ProgrammingProblem4();
                         break;
                     case "5":
+                        ProgrammingProblem5();
                         break;
                     case "Q":
                     case "q":
@@ -46,7 +49,7 @@ namespace ProgrammingExercises
         {
             Console.WriteLine("Enter strings you'd like to print, one string per line, enter 'STOP' when finished");
             List<string> strings = GetStringInput();
-            Functions.PrintStrings(strings);
+            Functions.Print<string>(strings);
         }
 
         static void ProgrammingProblem2()
@@ -91,6 +94,19 @@ namespace ProgrammingExercises
             {
                 Functions.PrintOddNumbers(lower, upper);
             }
+        }
+
+        static void ProgrammingProblem5()
+        {
+            int lower, upper;
+            GetLowerUpperBounds(out lower, out upper);
+            List<int> range = new List<int>();
+            for (int i = lower; i <= upper; i++)
+            {
+                range.Add(i);
+            }
+            Functions.PrintReverseOrder<int>(range);
+            Functions.Print<int>(range);
         }
 
         private static void PrintMenu()
@@ -166,7 +182,8 @@ namespace ProgrammingExercises
                 return false;
             }
 
-            Console.WriteLine("Please enter integer lower bound");
+            Console.WriteLine("Please enter integer upper bound");
+            input = Console.ReadLine();
             parsed = int.TryParse(input, out upper);
             if (!parsed)
             {

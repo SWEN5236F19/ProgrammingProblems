@@ -18,12 +18,12 @@ namespace ProgrammingExercises
 
         public static void PrintReverseOrder<T>(List<T> collection)
         {
-            Stack<string> stack = new Stack<string>();
+            Stack<T> stack = new Stack<T>();
             foreach (var item in collection)
             {
-                stack.Push(item.ToString());
+                stack.Push(item);
             }
-            Print<string>(stack.ToList());
+            Print<T>(stack.ToList());
         }
 
         public static void PrintNumbers(int lower, int upper, PARITY parity)

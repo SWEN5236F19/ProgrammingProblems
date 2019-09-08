@@ -3,5 +3,6 @@
 ################################################################################
 
 /.vs/ProgrammingExercises/v15
-/bin
-/obj
+/ProgrammingExercises/bin
+/ProgrammingExercises/obj
+ProgrammingExercises.sln

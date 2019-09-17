@@ -33,6 +33,12 @@ namespace ProgrammingExercises
                     case "5":
                         ProgrammingProblem5();
                         break;
+                    case "2.1":
+                        ProgrammingProblem2_1();
+                        break;
+                    case "2.2":
+                        ProgrammingProblem2_2();
+                        break;
                     case "Q":
                     case "q":
                         cont = false;
@@ -109,6 +115,45 @@ namespace ProgrammingExercises
             Functions.Print<int>(range);
         }
 
+        static void ProgrammingProblem2_1()
+        {
+            int lower, upper;
+            GetLowerUpperBounds(out lower, out upper);
+
+            int divisibleBy = 0;
+            Console.WriteLine("Enter integer to remove divisible by");
+            var input = Console.ReadLine();
+            bool parsed = int.TryParse(input, out divisibleBy);
+            if (!parsed)
+            {
+                Console.WriteLine("Invalid entry, exiting exercise");
+                return;
+            }
+            else
+            {
+                var numbers = new List<int>();
+                for (int i = lower; i <= upper; i++)
+                {
+                    if(i % divisibleBy != 0)
+                    {
+                        numbers.Add(i);
+                    }
+                }
+                Functions.PrintReverseOrder<int>(numbers);
+            }
+            return;
+        }
+
+        static void ProgrammingProblem2_2()
+        {
+            Console.WriteLine("Enter strings you'd like to sort by string length, one string per line, enter 'STOP' when finished");
+            var strings = GetStringInput();
+            var orderedStrings = (from str in strings
+                                  orderby str.Length ascending
+                                  select str).ToList<string>();
+            Functions.Print<string>(orderedStrings);
+        }
+
         private static void PrintMenu()
         {
             Console.WriteLine("Select a programming exercise to execute");
@@ -117,6 +162,9 @@ namespace ProgrammingExercises
             Console.WriteLine("3 - Print Lowest Number");
             Console.WriteLine("4 - List Even or Odds");
             Console.WriteLine("5 - Print Input in reverse and original order");
+            Console.WriteLine("2.1 - Print Integers in Reverse order and Elimiinate numbers divisible by");
+            Console.WriteLine("2.2 - Print strings in order by length");
+
             Console.WriteLine("Q - Quit");
         }
 

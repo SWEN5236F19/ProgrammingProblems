@@ -10,10 +10,12 @@ namespace ProgrammingExercises
     {
         public static void Print<T>(List<T> strings)
         {
+            Console.WriteLine("\nResults:");
             foreach (var str in strings)
             {
                 Console.WriteLine(str.ToString());
             }
+            Console.WriteLine("");
         }
 
         public static void PrintReverseOrder<T>(List<T> collection)
